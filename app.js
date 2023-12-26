@@ -62,21 +62,6 @@ document.getElementById('new-task2').addEventListener('keydown', function (event
     }
 });
 
-// function addStickyNote() {
-//     const noteText = document.getElementById('new-sticky-note').innerText.trim();
-//     if (noteText) {
-//         const notesContainer = document.getElementById('sticky-notes-list');
-//         const note = document.createElement('div');
-//         note.id = 'note-' + new Date().getTime();
-//         note.className = 'sticky-note';
-//         note.draggable = true;
-//         note.addEventListener('dragstart', drag);
-//         note.innerHTML = noteText;
-//         notesContainer.appendChild(note);
-//         document.getElementById('new-sticky-note').innerText = '';
-//     }
-// }
-
 function resizeTextarea(element) {
     element.style.height = 'auto';
     element.style.height = (element.scrollHeight) + 'px';
